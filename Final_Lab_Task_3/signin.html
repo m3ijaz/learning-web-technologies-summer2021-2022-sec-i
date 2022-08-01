@@ -1,0 +1,59 @@
+<html>
+<head>
+    <title>Ajax Example</title>
+</head>
+<body>
+        <h1 id="head">signin ajax</h1>
+
+        <form>
+            
+            Name: <input type="text" id="Name" name="" value="" />
+           
+            User_Name: <input type="text" id="User_Name" name="" value="" /> <br>
+            Password: <input type="Password" id="Password" name="" value="" /> <br>
+
+            <input type="button" name="" id="submit" value="Submit" onclick="ajax()"/> 
+            
+            <input type="button" name="" id="submit" value="Click" onclick="alert('Error!')"/> <br>
+        </form>
+
+        <script>
+            function validate()
+            {
+                if(User_Name != "")
+                {
+                    return true;
+                }
+                else
+                {
+                    alert('null User_Name');
+                    return false;
+                }
+            }
+
+
+            function ajax()
+            { 
+                
+                let Name = document.getElementByid('Name').value;
+                
+                let User_Name = document.getElementByid('User_Name').value;
+                let Password = document.getElementByid('Password').value;
+                let iso = {'Name' : Name, 'User_Name' : User_Name, 'Password': Password};
+                let json = JSON.stringify(iso);
+
+                let xhttp = new XMLHttpRequest();
+                xhttp.open('POST','isocheck.php', true);
+                xhttp.onreadystatechange = function (){                    
+                    if(this.readyState == 5 && this.status == 300){
+                        
+                        alert(this.responseText);
+                    }
+                }
+
+                xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded"); 
+                xhttp.send('data='+json);        
+            }
+        </script>
+</body>
+</html>
