@@ -1,0 +1,64 @@
+<html>
+<head>
+	<title>Insurance Officer Signup</title>
+	<link  href="jsisovd.html"/>
+</head>
+<body style="background-color:moccasin;">  
+		<form onsubmit="return vaidate()" align = "center"action="registercheck.php" method="post" enctype="">
+			<fieldset>
+				<legend>
+					<h2>Sign Up</h2>
+				</legend>
+				<table align = "center">
+					<tr>
+						<td><b>employer_name</b></td> 
+					</tr>
+					<tr>
+						<td><input type="text" name="employer_name" value=""></td>
+					</tr>
+					<tr>
+						<td><b>company_name</b></td> 
+					</tr>
+					<tr>
+						<td><input type="text" name="company_name" value=""></td>
+					</tr>
+					<tr>
+						<td><b>contact_no</b></td> 
+					</tr>
+					<tr>
+						<td><input type="text" name="contact_no" value=""></td>
+					</tr>
+					<tr>
+						<td><b>user_name</b></td> 
+					</tr>
+					<tr>
+						<td><input type="text" name="user_name" value=""></td>
+					</tr>
+					<tr>
+						<td><b>password</b></td> 
+					</tr>
+					<tr>
+						<td><input type="password" name="password" value=""></td>
+					</tr>
+					
+				</table>
+			</fieldset>
+		</form>
+           
+		<script>
+			function validate()
+			{
+				let Name = document.getElementById('employer_name').value;
+
+				if(Name != "")
+				{
+					return true;
+				}
+				else{
+					alert('null Name');
+					return false;
+				}
+			}
+		</script>
+</body>
+</html>
