@@ -1,0 +1,130 @@
+<html>
+<head>
+	<title>Insurance Officer Signup</title>
+</head>
+<body style="background-color:moccasin;">
+	<a href="../Management/welcome.php"> Back to Welcome Page </a><hr> <br>
+		<form align = "center"action="../Management/SignupCheck.php" method="post" enctype="">
+			<fieldset>
+				<legend>
+					<h2>Sign Up</h2>
+				</legend>
+				<table align = "center">
+					<tr>
+						<td><b>Name</b></td> 
+					</tr>
+					<tr>
+						<td><input type="text" name="Name" value=""></td>
+					</tr>
+					<tr>	
+				    <td><b>Gender</b></td>
+				    </tr>
+				    <tr>
+					    <td>
+						    <input type="radio" name="Gender" value="Male"> Male
+						    <input type="radio" name="Gender" value="Female"> Female
+						    <input type="radio" name="Gender" value="Other"> Other
+					   </td>
+				   </tr>
+					<tr>
+						<td><b>Email</b></td>
+					</tr>
+					<tr>
+						<td><input type="Email" name="Email" value=""></td>
+					</tr>
+					<tr>
+				        <td><b>DoB</b></td>
+				    </tr>
+				    <tr>
+						<td>
+							<input type="date" name="DoB" value = " ">
+						</td>
+					</tr>
+					<tr>
+        			     <td><b>Blood_Group</b></td>
+        			</tr>
+        			<tr>
+        				<td>
+        					<select name="Blood_Group">
+        						<option value="A+"> A+ </option>
+        						<option value="A-"> A- </option>
+        						<option value="B+"> B+ </option>
+        						<option value="B-"> B- </option>
+        						<option value="AB+"> AB+ </option>
+        						<option value="AB-"> AB- </option>
+        						<option value="O+"> O+ </option>
+        						<option value="O-"> O- </option>
+        					</select>
+        				</td>
+        			</tr>
+					<tr>
+        			    <td><b>Degree</b></td>
+        			</tr>
+        			<tr>
+        				<td>
+        					<input type="checkbox" name="Degree" value="SSC"> SSC 
+						    <input type="checkbox" name="Degree" value="HSC"> HSC
+						    <input type="checkbox" name="Degree" value="BSC"> BSC
+						    <input type="checkbox" name="Degree" value="BBA"> BBA
+						    <input type="checkbox" name="Degree" value="MA"> MA
+						    <input type="checkbox" name="Degree" value="MSC"> MSC
+						    <input type="checkbox" name="Degree" value="MBA"> MBA
+						    <input type="checkbox" name="Degree" value="Others"> Others
+        				</td>
+        			</tr>
+        			<tr>
+        			    <td><b>Occupation</b></td>
+        			</tr>
+        			<tr>
+        				<td>
+        					<select name="Occupation">
+        						<option value="Searching"> Searching </option>
+        						<option value="Student"> Student </option>
+        						<option value="Teacher"> Teacher </option>
+        						<option value="Businessman"> Businessman </option>
+        						<option value="Govt_Employee "> Govt_Employee </option>
+        						<option value="Sportsman"> Sportsman </option>
+        						<option value="Driver"> Driver </option>
+        						<option value="Others"> Others </option>
+        					</select>
+        				</td>
+        			</tr>
+					<tr>
+						<td><b>User_Name</b></td> 
+					</tr>
+					<tr>
+						<td><input type="text" name="User_Name" value=""></td>
+					</tr>
+					<tr>
+						<td><b>Password</b></td>
+					</tr>
+					<tr>
+						<td><input type="Password" name="Password" value=""></td>
+					</tr>
+					<tr>
+						<td><b>Confirm_Password</b></td>
+					</tr>
+					<tr>
+						<td><input type="Password" name="Password" value=""></td>
+					</tr>
+					<tr>	
+				        <td><b>User Type</b></td>
+				    </tr>
+				    <tr>
+					   <td> 
+						<input type="radio" name="User Type"> Insurance Officer
+					  </td>
+				    </tr>
+					<tr>
+						<td>
+							<hr>
+						<input type="submit" name="click" value="Sign Up">
+						<input type="reset" name="" value="Reset"> |
+							<a href="login.html"> Login </a> <hr>
+					   </td>
+					</tr>
+				</table>
+			</fieldset>
+		</form>
+</body>
+</html>
