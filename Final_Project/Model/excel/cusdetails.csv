@@ -1,0 +1,5 @@
+"NID","Name","Gender","Email","DOB","Blood_Group","Degree","Occupation","User_Name","Password","Confirm_Password"
+"0","Ome","Male","amit@gmail.com","2001-10-13","B+","BSC","Student","ome","12345","12345"
+"1","Anik","Male","anik@gmail.com","2000-12-12","B+","BBA","Student","anik","12345","12345"
+"2","Hasan","Male","hasan@gmail.com","1999-06-08","B+","BSC","Student","hasan","12345","12345"
+"1234567","urmi","Female","urmi@gmail.com","2022-08-24","O+","BSC","Teacher","urmi","12345678","12345678"
